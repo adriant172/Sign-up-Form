@@ -4,6 +4,10 @@
 * {
     /* border: solid black 2px; */
 }
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/fonts/Norse-Bold.otf);
+}
 
 body {
     display: flex;
@@ -14,9 +18,26 @@ body {
 .logo ,.content {
     position: relative;
     flex-grow: 1;
-    
 }
 .logo {
     background: url(imgs/plant_bg.jpg) no-repeat;
     background-size: 100% 100%;
+}
+.logo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 5rem;
+    background-color:rgba(0, 0, 0, .4);
+    position: relative;
+    top: 20vh;
+}
+.logo-content > img {
+    height: 1.2em;
+}
+.logo-content > p {
+    margin: 0 0;   
 }
