@@ -1,0 +1,22 @@
+:root {
+
+}
+* {
+    /* border: solid black 2px; */
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 100vh
+}
+.logo ,.content {
+    position: relative;
+    flex-grow: 1;
+    
+}
+.logo {
+    background: url(imgs/plant_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
