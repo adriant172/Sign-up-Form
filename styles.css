@@ -49,6 +49,17 @@ body {
 }
 header {
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(219, 219, 219, 0.2);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-left: 1.3rem;
+}
+header > * {
+    padding-right: 100px;
 }
 main {
     height: 30vh
