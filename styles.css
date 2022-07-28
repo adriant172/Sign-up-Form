@@ -13,7 +13,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    height: 100vh
+    height: 100vh;
+    margin: 0px;
 }
 .logo ,.main-content {
     position: relative;
@@ -47,6 +48,9 @@ body {
     flex-direction: column;
     width: 60vw;
 }
+fieldset {
+    border: none;
+}
 header {
     height: 35vh;
     display: flex;
@@ -63,6 +67,28 @@ header > * {
 }
 main {
     height: 30vh
+}
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50vw;;
+}
+fieldset > div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    width: 22.5vw;
+}
+label,input {
+    display: block;
+    font-size: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
+input {
+    border: solid #E5E7EB;
 }
 footer {
     height: 35vh;
