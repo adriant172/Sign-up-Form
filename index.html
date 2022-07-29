@@ -46,16 +46,18 @@
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="6" placeholder="Enter password" required>
                     </div>
                     <div>
                         <label for="confirm-pass">Password</label>
-                        <input type="password" name="confirm-pass" id="confirm-pass">
+                        <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm password" required>
                     </div>
                 </fieldset>
             </form>
         </main>
-        <footer>This will contain a footer</footer>
+        <footer>
+            <button type="submit" form="main-form">Submit</button>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,9 +1,7 @@
 :root {
 
 }
-* {
-    /* border: solid black 2px; */
-}
+
 @font-face {
     font-family: Norse-Bold;
     src: url(/fonts/Norse-Bold.otf);
@@ -88,7 +86,14 @@ label,input {
     padding: 5px;
 }
 input {
-    border: solid #E5E7EB;
+    border: solid 1px #E5E7EB;
+    border-radius: 5px;
+}
+input:focus {
+    border: solid 1px deepskyblue;
+}
+input[type=password]:not(:focus):not(:placeholder-shown):invalid{
+    border: solid crimson;
 }
 footer {
     height: 35vh;
