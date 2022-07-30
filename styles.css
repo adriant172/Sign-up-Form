@@ -64,13 +64,15 @@ header > * {
     padding-right: 100px;
 }
 main {
-    height: 30vh
+    height: 30vh;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+    display: flex;
 }
 fieldset {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 50vw;;
+    width: 50vw;
 }
 fieldset > div {
     margin-bottom: 1rem;
@@ -95,6 +97,15 @@ input:focus {
 input[type=password]:not(:focus):not(:placeholder-shown):invalid{
     border: solid crimson;
 }
+form {
+    display: flex;
+}
 footer {
     height: 35vh;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(219, 219, 219, 0.2);
 }
