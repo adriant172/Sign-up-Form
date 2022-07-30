@@ -46,9 +46,6 @@ body {
     flex-direction: column;
     width: 60vw;
 }
-fieldset {
-    border: none;
-}
 header {
     height: 35vh;
     display: flex;
@@ -66,9 +63,10 @@ header > * {
 main {
     height: 30vh;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
-    display: flex;
+    padding-bottom: 1.2rem;
 }
 fieldset {
+    border: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -108,4 +106,17 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: rgba(219, 219, 219, 0.2);
+}
+button {
+    background-color: #596D48;
+    color: white;
+    height: 2.3rem;
+    width: 175px;
+    border-radius: 6px;
+}
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 400;
+
 }
