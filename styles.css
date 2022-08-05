@@ -3,13 +3,17 @@
     font-family: Norse-Bold;
     src: url(fonts/Norse-Bold.otf);
 }
+:root {
+    font-size: 14px;
+}
 
 body {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0px;
+    min-height: 100vh;
 }
 .logo ,.main-content {
     position: relative;
@@ -23,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:40vw;
+    /* width:40vw; */
     gap: 5px;
     font-family: Norse-Bold;
     color: white;
@@ -31,6 +35,7 @@ body {
     background-color:rgba(0, 0, 0, .4);
     position: relative;
     top: 20vh;
+    max-height:100vh;
 }
 .logo-content > img {
     height: 1.2em;
@@ -40,11 +45,12 @@ body {
 }
 .main-content {
     display: flex;
-    flex-direction: column;
-    width: 60vw;
+    flex-direction: column ;
+    justify-content: stretch;
+    /* width: 60vw; */
 }
 header {
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -53,14 +59,18 @@ header {
     font-weight: 500;
     padding-bottom: 2rem;
     padding-left: 1.3rem;
+    flex: 1 1 auto;
+
 }
 header > * {
     padding-right: 100px;
+    width:40vw
 }
 main {
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
     padding-bottom: 1.2rem;
     display: flex;
+    
 }
 fieldset {
     border: none;
@@ -97,7 +107,7 @@ form {
     display: flex;
 }
 footer {
-    height: 35vh;
+    min-height: 35vh;
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
@@ -116,5 +126,4 @@ a {
     color: #596D48;
     text-decoration: none;
     font-weight: 400;
-
 }
